@@ -5,7 +5,7 @@ class Main {
     public static void main( String[] args ) {
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Iteration size: 1/");
-        int response = keyboard.nextInt();
+        long response = keyboard.nextLong();
         Gridpi calculator = new Gridpi(response);
         System.out.println("\n");
         long startTime = System.nanoTime();
