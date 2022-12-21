@@ -1,11 +1,11 @@
 public class Gridpi {
-    private int gaps, totalPts, targetPts;
+    private long gaps, totalPts, targetPts;
 
-    public Gridpi(int gaps) {
+    public Gridpi(long gaps) {
         this.setGaps(gaps);
     }
 
-    public void setGaps(int gaps) {
+    public void setGaps(long gaps) {
         this.gaps = gaps;
     }
 
@@ -18,9 +18,9 @@ public class Gridpi {
         }
     }
 
-    public int getTotalPts() { return this.totalPts; }
+    public long getTotalPts() { return this.totalPts; }
 
-    public int getTargetPts() { return this.targetPts; }
+    public long getTargetPts() { return this.targetPts; }
 
     public double getPi() {
         this.calculatePts();
