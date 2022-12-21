@@ -8,8 +8,14 @@ class Main {
         int response = keyboard.nextInt();
         Gridpi calculator = new Gridpi(response);
         System.out.println("\n");
+        long startTime = System.nanoTime();
         double output = calculator.getPi();
+        long endTime = System.nanoTime();
         System.out.print("Pi = ");
         System.out.print(output);
+        System.out.println();
+        System.out.print("Calculated in ");
+        System.out.print(endTime - startTime);
+        System.out.print(" nanoseconds");
     }
 }
