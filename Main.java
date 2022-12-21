@@ -8,7 +8,8 @@ class Main {
         int response = keyboard.nextInt();
         Gridpi calculator = new Gridpi(response);
         System.out.println("\n");
+        double output = calculator.getPi();
         System.out.print("Pi = ");
-        System.out.print(calculator.getPi());
+        System.out.print(output);
     }
 }
