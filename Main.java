@@ -1,7 +1,11 @@
 import static java.lang.System.*;
+import java.util.Scanner;
 
 class Main {
     public static void main( String[] args ) {
-        System.out.println("hi");
+        Scanner keyboard = new Scanner(System.in);
+        System.out.print("Iteration size: 1/");
+        int response = keyboard.nextInt();
+        Gridpi calculator = new Gridpi(response);
     }
 }
